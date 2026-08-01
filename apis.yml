@@ -1,8 +1,22 @@
 aid: qapa
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/qapa.png
 name: Qapa
-description: 'Qapa is a company surfaced as a portfolio company of index-ventures, partech and added to
-  the API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Qapa (qapa.fr) is a Paris-based French online recruitment and temporary-work (interim)
+  marketplace that matched companies with job seekers for permanent and temp placements. Backed by Index
+  Ventures and Partech, it was majority-acquired by the Adecco Group. The qapa.fr web property is now gated
+  behind an Azure Application Gateway (HTTP 403) and exposes no public developer, API, or documentation
+  surface; this profile is retained as an API Evangelist network record.'
 url: https://raw.githubusercontent.com/api-evangelist/qapa/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +27,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-- Unknown
+- Recruitment
+- Staffing
+- Temporary Work
+- Human Resources
+- Jobs
+- Marketplace
+- France
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +44,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/qapa-domain-security.yml
 - type: Website
-  url: http://qapa.fr
+  url: https://www.qapa.fr
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1

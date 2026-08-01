@@ -1,0 +1,17 @@
+generated: '2026-07-20'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: qapa.fr
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct  8 11:40:57 2026 GMT
+  hsts: null
+domains:
+- domain: qapa.fr
+  dnssec: false
+  caa:
+  - 0 issue "letsencrypt.org"
+  spf: true
+  dmarc: true
+  dmarc_policy: none
